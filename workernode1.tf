@@ -9,3 +9,25 @@ resource "ibm_compute_vm_instance" "worker1" {
  flavor_key_name = "M1_8X64X25"
  local_disk = false
 }
+resource "ibm_compute_vm_instance" "worker2" {
+ hostname = "workernode2"
+ domain = "redhat.com"
+ os_reference_code = "REDHAT_LATEST"
+ datacenter = "fra05"
+ network_speed = 100
+ hourly_billing = true
+ private_network_only = false
+ flavor_key_name = "M1_8X64X25"
+ local_disk = false
+}
+resource "ibm_compute_vm_instance" "worker3" {
+ hostname = "workernode3"
+ domain = "redhat.com"
+ os_reference_code = "REDHAT_LATEST"
+ datacenter = "fra05"
+ network_speed = 100
+ hourly_billing = true
+ private_network_only = false
+ flavor_key_name = "M1_8X64X25"
+ local_disk = false
+}
