@@ -1,5 +1,5 @@
-resource "ibm_compute_bare_metal" "hourly-bm1" {
-    hostname = "hourly-bm1"
+resource "ibm_compute_bare_metal" "bootstrap-bm" {
+    hostname = "bootstrap-bm"
     domain = "redhat.com"
     os_reference_code = "CUSTOS_1_64"
     datacenter = "fra05"
